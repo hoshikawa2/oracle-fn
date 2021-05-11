@@ -472,6 +472,22 @@ Você deve obter algo como:
 # T3 - Tutorial 3 - Instalando functions CLI
 
 
+Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
+
+Abra o arquivo Fn Project CLI README.md no GitHub e siga as instruções apropriadas para instalar o Fn Project CLI. Como uma visão geral conveniente, as instruções são resumidas abaixo:
+
+    Linux ou MacOS: Digite:
+    $ curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+    
+    MacOS usando Homebrew: Digite:
+    $ brew update && brew install fn
+    
+    Linux, MacOS ou Windows: 
+    Baixe e execute o binário da página Fn Project Releases no GitHub .
+
+Confirme se a CLI foi instalada inserindo:
+
+    $ fn version
 
 ----
 
