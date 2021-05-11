@@ -468,8 +468,6 @@ Você deve obter algo como:
 
 ----
 
-PAROU AQUI!!! 
-
 
 # T3 - Tutorial 3 - Instalando functions CLI
 
