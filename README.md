@@ -54,7 +54,7 @@ Se você pretende instalar o docker com WSL no Windows:
     
 **T1.4.1 Linux**
 
-Para instalar o docker no Oracle Linux, CentOS, Redhat, primeiramente faça o setup do repositório:
+Para instalar o docker no Oracle Linux (utilize a versão 8), CentOS, Redhat, primeiramente faça o setup do repositório:
 
     $ sudo yum install -y yum-utils
 
@@ -69,12 +69,12 @@ Para instalar o docker no Oracle Linux, CentOS, Redhat, primeiramente faça o se
     static
     ubuntu
     
-    exemplo para rhel:
-    $ sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+    exemplo para centos:
+    $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 Em seguida, instale a última versão do Docker:
 
-    $ sudo yum install docker-ce docker-ce-cli containerd.io --skip-broken
+    $ sudo yum install docker-ce docker-ce-cli containerd.io
 
 Será apresentado o fingerprint conforme abaixo. Assim que for apresentado, clique em aceitar.
 
