@@ -723,12 +723,12 @@ Se os usuários e grupos adequados ainda não existirem, faça login no console 
 
 Crie um novo grupo clicando em Grupos e depois em Criar Grupo .
 
-![Criando_Grupo.png](https://github.com/hoshikawa2/repo-image/blob/master/Criando_Grupo.png?raw=true)
+![create_group.png](https://github.com/hoshikawa2/repo-image/blob/master/create_group.png?raw=true)
 
 
-Crie um novo usuário clicando em Usuários e em Criar usuário .
+Crie um novo usuário clicando em Usuários e em Criar usuário. Lembre-se de selecionar "IAM User". Após criar o usuário, este usuário irá receber um e-mail para ajustar sua senha.
 
-![Criar_usuario.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_usuario.png?raw=true)
+![criar_usuario2.png](https://github.com/hoshikawa2/repo-image/blob/master/criar_usuario2.png?raw=true)
 
 Adicione um usuário a um grupo clicando em Grupos , depois no nome do grupo e em Adicionar usuário ao grupo .
 
