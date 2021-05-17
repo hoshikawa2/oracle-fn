@@ -762,8 +762,9 @@ Se ainda não houver um VCN adequado para criar recursos de rede, faça login no
 
 ![start_vcn_wizard.png](https://github.com/hoshikawa2/repo-image/blob/master/start_vcn_wizard.png?raw=true)
 
+![vcn_wizard.png](https://github.com/hoshikawa2/repo-image/blob/master/vcn_wizard.png?raw=true)
 
-
+![dados_vcn2.png](https://github.com/hoshikawa2/repo-image/blob/master/dados_vcn2.png?raw=true)
 
 
 **T5.1.4 Criar política para o grupo**
@@ -772,7 +773,11 @@ Caixa de diálogo Criar Política
 
 * Faça login no console como administrador de locação e, em Governança e administração , acesse Identidade e clique em Políticas e, em seguida:
 
-![Criar_politica.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_politica.png?raw=true)
+![criar_politicas.png](https://github.com/hoshikawa2/repo-image/blob/master/criar_politicas.png?raw=true)
+
+![dados_politica.png](https://github.com/hoshikawa2/repo-image/blob/master/dados_politica.png?raw=true)
+
+Clique na opção "Show manual editor"
 
 * Se um ou mais usuários do Oracle Functions não for um administrador de locação, use o Criador de políticas para criar uma nova política. Selecione o compartimento raiz da locação e baseie a política no modelo de política. Permitir que os usuários criem, implantem e gerenciem funções e aplicativos usando o Cloud Shell .
 O modelo de política inclui as seguintes declarações de política:
