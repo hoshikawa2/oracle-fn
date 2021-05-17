@@ -1021,9 +1021,15 @@ Agora que você criou, implantou e invocou uma função, leia a documentação p
 
 Referências:
 
+Oracle Container Registry - OCIR
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/index.html
 - https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#two
 
+Oracle Functions - Quick-View (base do material utilizado neste workshop)
 - https://www.oracle.com/webfolder/technetwork/tutorials/infographics/oci_faas_gettingstarted_quickview/functions_quickview_top/functions_quickview/index.html
 
+Oracle Functions - Samples
 - https://github.com/oracle/oracle-functions-samples/tree/master/samples
+
+Oracle Functions - Connecting To ATP With Node.JS
+- https://blogs.oracle.com/developers/oracle-functions-connecting-to-atp-with-nodejs
