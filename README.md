@@ -817,7 +817,57 @@ Confirme se a CLI foi instalada inserindo:
 
 **T5.2.2.2 Configure Fn Project CLI no ambiente de desenvolvimento local**
 
-**T5.2.2.2.1 Configure o contexto CLI do projeto Fn - provedor Oracle** 
+**T5.5.2.2.1 Configurar chave de assinatura**
+
+* Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
+
+Gere uma chave privada criptografada com uma senha longa que você fornece inserindo:
+
+    $ openssl genrsa -out ~/.oci/<private-key-file-name>.pem -aes128 2048
+
+Altere as permissões no arquivo para garantir que somente você possa lê-lo.
+
+    $ chmod go-rwx ~/.oci/<private-key-file-name>.pem
+
+Gere uma chave pública (criptografada com a mesma senha longa que você forneceu ao criar a chave privada e no mesmo local do arquivo da chave privada) inserindo:
+
+    $ openssl rsa -pubout -in ~/.oci/<private-key-file-name>.pem -out ~/.oci/<public-key-file-name>.pem
+
+Copie o conteúdo do arquivo de chave pública que você acabou de criar, digitando:
+
+    $ cat ~/.oci/<public-key-file-name>.pem | pbcopy
+
+Criar chave API
+![Chave_API.png](https://github.com/hoshikawa2/repo-image/blob/master/Chave_API.png?raw=true)
+
+Faça login no console como desenvolvedor de funções, abra o menu do usuário ( Ícone do menu do usuário) e vá para as configurações do usuário . Na página Chaves de API , clique em Adicionar chave pública . Cole o valor da chave pública na janela e clique em Adicionar . A chave é carregada e sua impressão digital é exibida.
+
+
+
+**T5.2.2.2.2 Configurar perfil OCI**
+
+Iremos configurar o perfil para o OCI CLI para seu usuário (não-federado) criado no passo anterior **T5.1.1**
+
+    Obs: Quando você criou o ambiente TRIAL, seu usuário foi criado como federado (o nome do seu usuário inicia-se por oracleidentitycloudservice/<nome do usuário>. Porém para trabalhar com o functions, estaremos utilizando o usuário não-federado (sem o oracleidentitycloudservice) pois o Grupo criado anteriormente não aceita usuários federados.
+
+Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
+
+Abra o arquivo ~ / .oci / config em um editor de texto. (Se o diretório e / ou o arquivo ainda não existirem, crie-os).
+marca de verificação
+
+Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
+
+    [<profile-name>]
+    user=<user-ocid>
+    fingerprint=<public-key-fingerprint>
+    key_file=<full-path-to-private-key-pem-file>
+    tenancy=<tenancy-ocid>
+    region=<region-name>
+    pass_phrase=<passphrase>
+
+Salve e feche o arquivo.
+
+**T5.2.2.2.3 Configure o contexto CLI do projeto Fn - provedor Oracle** 
 
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
@@ -834,9 +884,9 @@ Especifique que a CLI do projeto Fn deve usar o novo contexto inserindo:
 
 Configure o novo contexto com o nome do perfil OCI que você criou para usar com o Oracle Functions, digitando:
 
-    $ fn update context oracle.profile default
+    $ fn update context oracle.profile <profile-name>
 
-Lembre-se: default é o nome do perfil criado na instalação e configuração do OCI CLI na etapa anterior.
+Lembre-se: <profile-name> é o nome do perfil criado na etapa anterior. O nome do perfil é case-sensitive!!!!
 
 **T5.2.2.2.2 Concluir a configuração do contexto CLI do projeto Fn**
 
@@ -904,7 +954,6 @@ Faça login no console como desenvolvedor de funções e, em Desenvolvimento, cl
 **T5.2.2.2.6 Crie sua primeira função**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
-marca de verificação
 
 ![Criar_primeira_funcao.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_primeira_funcao.png?raw=true)
 
