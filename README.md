@@ -755,12 +755,13 @@ Clique em Compartments e em Create Compartment.
 
 Se ainda não houver um VCN adequado para criar recursos de rede, faça login no console como administrador de locação e em Infraestrutura central , vá para Rede e, em seguida:
 
-* Clique em Redes em nuvem virtual e escolha um compartimento.
+* Clique em Redes e em VCN (Virtual Cloud Network) e escolha um compartimento.
 * Clique em Start VCN Wizard , depois em VCN with Internet Connectivity e em Start VCN Wizard .
 * Insira um nome para o novo VCN, clique em Avançar e em Criar para criar o VCN junto com os recursos de rede relacionados.
 
 
-![Criar_vcn.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_vcn.png?raw=true)
+![start_vcn_wizard.png](https://github.com/hoshikawa2/repo-image/blob/master/start_vcn_wizard.png?raw=true)
+
 
 
 
