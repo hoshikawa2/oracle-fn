@@ -847,9 +847,18 @@ Configure o novo contexto com o OCID do compartimento em que deseja possuir as f
 
     $ fn update context oracle.compartment-id <compartment-ocid>
 
+![compartment_ocid.png](https://github.com/hoshikawa2/repo-image/blob/master/compartment_ocid.png?raw=true)
+
+
 Configure o novo contexto com o endpoint api-url para usar ao chamar a API OCI inserindo:
 
-    $ fn update context api-url <api-endpoint>
+    $ fn update context api-url https://functions.<region>.oci.oraclecloud.com
+
+    Onde <region> pode ser:
+    us-phoenix-1
+    us-ashburn-1
+    sa-saopaulo-1
+    entre outras
 
 Por exemplo:
 
