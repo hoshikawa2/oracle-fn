@@ -79,7 +79,11 @@ Em seguida, instale a última versão do Docker:
 Será apresentado o fingerprint conforme abaixo. Assim que for apresentado, clique em aceitar.
 
     060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35
-    
+
+Execute o comando abaixo para poder trabalhar com o functions integrado ao docker:
+
+    sudo chown opc:docker /var/run/docker.sock
+
 Inicie o docker com:
 
     $ sudo systemctl start docker
