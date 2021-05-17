@@ -821,24 +821,18 @@ Confirme se a CLI foi instalada inserindo:
 
 * Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
-Gere uma chave privada criptografada com uma senha longa que você fornece inserindo:
-
-    $ openssl genrsa -out ~/.oci/<private-key-file-name>.pem -aes128 2048
-
-Altere as permissões no arquivo para garantir que somente você possa lê-lo.
-
-    $ chmod go-rwx ~/.oci/<private-key-file-name>.pem
-
 Gere uma chave pública (criptografada com a mesma senha longa que você forneceu ao criar a chave privada e no mesmo local do arquivo da chave privada) inserindo:
 
     $ openssl rsa -pubout -in ~/.oci/<private-key-file-name>.pem -out ~/.oci/<public-key-file-name>.pem
+
+Obs: Se você aceitou todos os defaults na etapa de configuração do OCI CLI, o <private-key-file-name> é **oci_api_key.pem**
 
 Copie o conteúdo do arquivo de chave pública que você acabou de criar, digitando:
 
     $ cat ~/.oci/<public-key-file-name>.pem | pbcopy
 
 Criar chave API
-![Chave_API.png](https://github.com/hoshikawa2/repo-image/blob/master/Chave_API.png?raw=true)
+![chave_api2.png](https://github.com/hoshikawa2/repo-image/blob/master/chave_api2.png?raw=true)
 
 Faça login no console como desenvolvedor de funções, abra o menu do usuário ( Ícone do menu do usuário) e vá para as configurações do usuário . Na página Chaves de API , clique em Adicionar chave pública . Cole o valor da chave pública na janela e clique em Adicionar . A chave é carregada e sua impressão digital é exibida.
 
@@ -852,7 +846,7 @@ Iremos configurar o perfil para o OCI CLI para seu usuário (não-federado) cria
 
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
-Abra o arquivo ~ / .oci / config em um editor de texto. (Se o diretório e / ou o arquivo ainda não existirem, crie-os).
+Abra o arquivo **~/.oci/config** em um editor de texto. (Se o diretório e / ou o arquivo ainda não existirem, crie-os).
 marca de verificação
 
 Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
@@ -864,6 +858,10 @@ Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
     tenancy=<tenancy-ocid>
     region=<region-name>
     pass_phrase=<passphrase>
+
+    <user-ocid> e <public-key-fingerprint> podem ser obtidos na tela do seu usuário (não-federado) recém criado
+    <full-path-to-private-key-pem-file> é o diretório (se você aceitou todos os defaults na etapa de configuração do OCI CLI) ~/.oci/oci_api_key.pem
+    <tenancy-ocid> é o mesmo indicado na configuração do seu OCI CLI para seu usuário federado
 
 Salve e feche o arquivo.
 
