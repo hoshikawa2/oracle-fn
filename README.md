@@ -882,21 +882,22 @@ Agora você está pronto para começar a criar, implantar e invocar funções.
 
 **T5.2.2.2.5.1 1Crie seu primeiro aplicativo**
 
-Faça login no console como desenvolvedor de funções e, em Soluções e plataforma , acesse Serviços para desenvolvedores e clique em Funções e:
+Faça login no console como desenvolvedor de funções e, em Desenvolvimento, clique em Funções e:
 
-![Nova_aplicacao.png](https://github.com/hoshikawa2/repo-image/blob/master/Nova_aplicacao.png?raw=true)
+![menu_functions.png](https://github.com/hoshikawa2/repo-image/blob/master/menu_functions.png?raw=true)
+
+![create_function.png](https://github.com/hoshikawa2/repo-image/blob/master/create_function.png?raw=true)
 
 
-Selecione a região que pretende usar para o Oracle Functions (recomendado que seja a mesma região do registro Docker especificado no contexto Fn Project CLI).
+* Digite o nome de sua aplicação: **helloworld-app** 
 
-Selecione o compartimento especificado no contexto Fn Project CLI.
+* Selecione o compartimento especificado no contexto Fn Project CLI e que também foi criado para a sua VCN
 
-Clique em Criar aplicativo e especifique:
+* A VCN e a sub-rede (pública para efeitos didáticos) na qual irá executar a função.
 
-**helloworld-app** como o nome do novo aplicativo. Você implantará sua primeira função neste aplicativo e especificará este aplicativo ao invocar a função.
-A VCN e a sub-rede na qual executar a função.
+* Você implantará sua primeira função neste aplicativo e especificará este aplicativo ao invocar a função.
 
-Clique em Criar .
+* Clique em Criar 
 
 
 
