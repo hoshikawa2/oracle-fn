@@ -62,7 +62,7 @@ Para instalar o docker no Oracle Linux, CentOS, Redhat, primeiramente faça o se
 
 Em seguida, instale a última versão do Docker:
 
-    $ sudo yum install docker-ce docker-ce-cli containerd.io
+    $ sudo yum install docker-ce docker-ce-cli containerd.io --skip-broken
 
 Será apresentado o fingerprint conforme abaixo. Assim que for apresentado, clique em aceitar.
 
