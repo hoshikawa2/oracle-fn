@@ -732,7 +732,7 @@ Crie um novo usuário clicando em Usuários e em Criar usuário. Lembre-se de se
 
 Adicione um usuário a um grupo clicando em Grupos , depois no nome do grupo e em Adicionar usuário ao grupo .
 
-![Adicionar_usuario.png](https://github.com/hoshikawa2/repo-image/blob/master/Adicionar_usuario.png?raw=true)
+![adicionar_usuario_grupo.png](https://github.com/hoshikawa2/repo-image/blob/master/adicionar_usuario_grupo.png?raw=true)
 
 
 
