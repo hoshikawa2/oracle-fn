@@ -821,14 +821,6 @@ Confirme se a CLI foi instalada inserindo:
 
 * Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
-Gere uma chave privada criptografada com uma senha longa que você fornece inserindo:
-
-    $ openssl genrsa -out ~/.oci/<private-key-file-name>.pem -aes128 2048
-
-Altere as permissões no arquivo para garantir que somente você possa lê-lo.
-
-    $ chmod go-rwx ~/.oci/<private-key-file-name>.pem
-
 Gere uma chave pública (criptografada com a mesma senha longa que você forneceu ao criar a chave privada e no mesmo local do arquivo da chave privada) inserindo:
 
     $ openssl rsa -pubout -in ~/.oci/<private-key-file-name>.pem -out ~/.oci/<public-key-file-name>.pem
