@@ -58,7 +58,19 @@ Para instalar o docker no Oracle Linux, CentOS, Redhat, primeiramente faça o se
 
     $ sudo yum install -y yum-utils
 
-    $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    $ sudo yum-config-manager --add-repo https://download.docker.com/linux/<edição do Linux>/docker-ce.repo
+    
+    Edições de Linux disponíveis:
+    centos
+    debian
+    fedora
+    raspbian
+    rhel
+    static
+    ubuntu
+    
+    exemplo para rhel:
+    $ sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
 
 Em seguida, instale a última versão do Docker:
 
