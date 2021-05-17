@@ -694,7 +694,7 @@ Veja que:
     ## Exemplo Hello World	
     por Karthequian [retirado do Dockerhub](https://hub.docker.com/r/karthequian/helloworld/)
     
-    ![Helloworld por Karthquian](https://camo.githubusercontent.com/b13f75f4886d7994faf2aa86b438710c3a61f8a5032568f6f02828de59ab3220/68747470733a2f2f7777772e6f7261636c652e636f6d2f776562666f6c6465722f746563686e6574776f726b2f7475746f7269616c732f6f62652f6f63692f72656769737472792f696d672f6f63692d696d6167652d726561646d652d636f6d706c6574652e706e67)
+    ![Hellow World por Karthequian](https://github.com/hoshikawa2/repo-image/blob/master/imagem_hello_world.png?raw=true)
 
 
 ![Janela Editar Leiame, guia Editar](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/img/oci-image-readme-complete.png)
@@ -800,7 +800,6 @@ O modelo de política inclui as seguintes declarações de política:
 **T.5.2.1 Instalar Fn Project CLI**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
-marca de verificação
 
 Abra o arquivo Fn Project CLI README.md no GitHub e siga as instruções apropriadas para instalar o Fn Project CLI. Como uma visão geral conveniente, as instruções são resumidas abaixo:
 
@@ -851,7 +850,6 @@ Iremos configurar o perfil para o OCI CLI para seu usuário (não-federado) cria
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
 Abra o arquivo **~/.oci/config** em um editor de texto. (Se o diretório e / ou o arquivo ainda não existirem, crie-os).
-marca de verificação
 
 Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
 
@@ -878,7 +876,6 @@ Crie um novo contexto Fn CLI inserindo:
     $ fn create context meu_contexto --provider oracle
 
 Observe que você especifica --provider oraclea ativação da autenticação e autorização usando assinatura de solicitação do Oracle Cloud Infrastructure, chaves privadas, grupos de usuários e políticas que concedem permissões a esses grupos de usuários.
-marca de verificação
 
 Especifique que a CLI do projeto Fn deve usar o novo contexto inserindo:
 
@@ -893,7 +890,6 @@ Lembre-se: <profile-name> é o nome do perfil criado na etapa anterior. O nome d
 **T5.2.2.2.2 Concluir a configuração do contexto CLI do projeto Fn**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
-marca de verificação
 
 Configure o novo contexto com o OCID do compartimento em que deseja possuir as funções implantadas:
 
