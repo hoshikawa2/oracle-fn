@@ -718,6 +718,15 @@ Parabéns! Você puxou com sucesso a imagem helloworld do DockerHub, marcou-a e 
 
 # T5 - Criando seu primeiro projeto functions
 
+Este passo é muito importante, pois criaremos aqui o usuário a trabalhar com o Oracle functions.
+Também criaremos o grupo e compartimento para armazenar a aplicação e a função deste workshop, bem como daremos os acessos para este usuário.
+É muito importante que este usuário, não-federado, seja criado para se trabalhar com o Oracle functions, pois não é possível trabalhar com o usuário federado no exemplo a ser seguido.
+Distingue-se o usuário federado do não-federado de forma muito simples. Usuários federados iniciam seu nome com **oracleidentitycloudservice/** à frente do nome do usuário.
+
+    Você poderá criar seu usuário não-federado com o mesmo nome do usuário federado.
+    Logo, se seu usuário federado é oracleidentitycloudservice/joao.almeida@oracle.com
+    Seu usuário não federado será: joao.almeida@oracle.com
+
 **T5.1 Configure sua locação**
 
 **T5.1.1 Crie grupos e usuários**
