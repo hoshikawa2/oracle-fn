@@ -493,7 +493,8 @@ Abra o arquivo Fn Project CLI README.md no GitHub e siga as instruções apropri
     $ brew update && brew install fn
     
     Linux, MacOS ou Windows: 
-    Baixe e execute o binário da página Fn Project Releases no GitHub .
+    Baixe e execute o binário da página Fn Project Releases no GitHub
+    https://github.com/fnproject/cli/releases
 
 Confirme se a CLI foi instalada inserindo:
 
