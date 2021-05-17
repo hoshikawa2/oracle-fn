@@ -1038,3 +1038,5 @@ Referências:
 - https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#two
 
 - https://www.oracle.com/webfolder/technetwork/tutorials/infographics/oci_faas_gettingstarted_quickview/functions_quickview_top/functions_quickview/index.html
+
+- https://github.com/oracle/oracle-functions-samples/tree/master/samples
