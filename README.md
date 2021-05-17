@@ -593,9 +593,9 @@ Por exemplo ansh81vru1zp/jdoe@acme.com. Se a sua tenant for federada com o Oracl
 ### T4.6 - Extraia a imagem hello-world do DockerHub
 
 Em uma janela de terminal na máquina cliente que executa o Docker
-Digite docker 
-    
-    pull karthequian/helloworld:latest 
+Digite 
+
+    docker pull karthequian/helloworld:latest 
     
 para recuperar a versão mais recente da imagem hello-world do DockerHub.
 
