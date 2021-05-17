@@ -797,30 +797,9 @@ O modelo de política inclui as seguintes declarações de política:
 
 **T5.2 Configure seu ambiente de desenvolvimento**
 
-**T.5.2.1 Instalar Fn Project CLI**
+**T5.2.2.1 Configure Fn Project CLI no ambiente de desenvolvimento local**
 
-Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
-
-Abra o arquivo Fn Project CLI README.md no GitHub e siga as instruções apropriadas para instalar o Fn Project CLI. Como uma visão geral conveniente, as instruções são resumidas abaixo:
-
-    Linux ou MacOS:
-    $ curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
-    
-    MacOS usando Homebrew:
-    $ brew install fn
-    
-    Linux, MacOS ou Windows: baixe e execute o binário da página Fn Project Releases no GitHub
-    https://github.com/fnproject/cli/releases
-
-Confirme se a CLI foi instalada inserindo:
-
-    $ fn version
-
-
-
-**T5.2.2.2 Configure Fn Project CLI no ambiente de desenvolvimento local**
-
-**T5.5.2.2.1 Configurar chave de assinatura**
+**T5.5.2.1.1 Configurar chave de assinatura**
 
 * Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
@@ -841,7 +820,7 @@ Faça login no console como desenvolvedor de funções, abra o menu do usuário 
 
 
 
-**T5.2.2.2.2 Configurar perfil OCI**
+**T5.2.2.1.2 Configurar perfil OCI**
 
 Iremos configurar o perfil para o OCI CLI para seu usuário (não-federado) criado no passo anterior **T5.1.1**
 
@@ -867,7 +846,7 @@ Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
 
 Salve e feche o arquivo.
 
-**T5.2.2.2.3 Configure o contexto CLI do projeto Fn - provedor Oracle** 
+**T5.2.2.1.3 Configure o contexto CLI do projeto Fn - provedor Oracle** 
 
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
@@ -887,7 +866,7 @@ Configure o novo contexto com o nome do perfil OCI que você criou para usar com
 
 Lembre-se: <profile-name> é o nome do perfil criado na etapa anterior. O nome do perfil é case-sensitive!!!!
 
-**T5.2.2.2.2 Concluir a configuração do contexto CLI do projeto Fn**
+**T5.2.2.1.4 Concluir a configuração do contexto CLI do projeto Fn**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
@@ -926,9 +905,9 @@ Agora você está pronto para começar a criar, implantar e invocar funções.
 
 
 
-**T5.2.2.2.5 Criar, implantar e invocar sua função**
+**T5.2.2.1.5 Criar, implantar e invocar sua função**
 
-**T5.2.2.2.5.1 1Crie seu primeiro aplicativo**
+**T5.2.2.1.5.1 1Crie seu primeiro aplicativo**
 
 Faça login no console como desenvolvedor de funções e, em Desenvolvimento, clique em Funções e:
 
@@ -949,7 +928,7 @@ Faça login no console como desenvolvedor de funções e, em Desenvolvimento, cl
 
 
 
-**T5.2.2.2.6 Crie sua primeira função**
+**T5.2.2.1.6 Crie sua primeira função**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
@@ -967,7 +946,7 @@ Java é apenas uma das várias linguagens suportadas.
 
 
 
-**T5.2.2.2.7 Implante sua primeira função**
+**T5.2.2.1.7 Implante sua primeira função**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
@@ -992,7 +971,7 @@ Insira o seguinte comando único Fn Project para construir a função e suas dep
 
 
 
-**T5.2.2.2.8 Invoque sua primeira função**
+**T5.2.2.1.8 Invoque sua primeira função**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
