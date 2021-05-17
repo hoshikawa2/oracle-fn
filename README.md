@@ -688,9 +688,9 @@ Veja que:
 **T4.9.3.2** Em Edit Readme, selecione a opção Markdown e copie e cole a seguinte descrição da imagem helloworld no conteúdo de campo:
 
 	## Exemplo Hello World	
-	por Karthequian [retirado do Dockerhub] (https://hub.docker.com/r/karthequian/helloworld/)
+	por Karthequian [retirado do Dockerhub](https://hub.docker.com/r/karthequian/helloworld/)
 
-        ![Helloworld por Karthquian] (https://raw.githubusercontent.com/oracle/cloud-native-devops-workshop/master/containers/docker001/images/004-hello-world.png)
+        ![Helloworld por Karthquian](https://raw.githubusercontent.com/oracle/cloud-native-devops-workshop/master/containers/docker001/images/004-hello-world.png)
 
 
 ![Janela Editar Leiame, guia Editar](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/img/oci-image-readme-complete.png)
