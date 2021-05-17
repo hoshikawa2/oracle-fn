@@ -817,69 +817,28 @@ Confirme se a CLI foi instalada inserindo:
 
 **T5.2.2.2 Configure Fn Project CLI no ambiente de desenvolvimento local**
 
-**T5.5.2.2.1 Configurar chave de assinatura**
-
-* Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
-
-Gere uma chave pública (criptografada com a mesma senha longa que você forneceu ao criar a chave privada e no mesmo local do arquivo da chave privada) inserindo:
-
-    $ openssl rsa -pubout -in ~/.oci/<private-key-file-name>.pem -out ~/.oci/<public-key-file-name>.pem
-
-Copie o conteúdo do arquivo de chave pública que você acabou de criar, digitando:
-
-    $ cat ~/.oci/<public-key-file-name>.pem | pbcopy
-
-Criar chave API
-![Chave_API.png](https://github.com/hoshikawa2/repo-image/blob/master/Chave_API.png?raw=true)
-
-Faça login no console como desenvolvedor de funções, abra o menu do usuário ( Ícone do menu do usuário) e vá para as configurações do usuário . Na página Chaves de API , clique em Adicionar chave pública . Cole o valor da chave pública na janela e clique em Adicionar . A chave é carregada e sua impressão digital é exibida.
-
-
-
-**T5.2.2.2.2 Configurar perfil OCI**
-
-Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
-marca de verificação
-
-Abra o arquivo ~ / .oci / config em um editor de texto. (Se o diretório e / ou o arquivo ainda não existirem, crie-os).
-marca de verificação
-
-Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
-
-    [<profile-name>]
-    user=<user-ocid>
-    fingerprint=<public-key-fingerprint>
-    key_file=<full-path-to-private-key-pem-file>
-    tenancy=<tenancy-ocid>
-    region=<region-name>
-    pass_phrase=<passphrase>
-
-Salve e feche o arquivo.
-
-
-
-**T5.2.2.2.3 Configure o contexto CLI do projeto Fn - oráculo do provedor** 
+**T5.2.2.2.1 Configure o contexto CLI do projeto Fn - provedor Oracle** 
 
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
 Crie um novo contexto Fn CLI inserindo:
 
-    $ fn create context <my-context> --provider oracle
+    $ fn create context meu_contexto --provider oracle
 
 Observe que você especifica --provider oraclea ativação da autenticação e autorização usando assinatura de solicitação do Oracle Cloud Infrastructure, chaves privadas, grupos de usuários e políticas que concedem permissões a esses grupos de usuários.
 marca de verificação
 
 Especifique que a CLI do projeto Fn deve usar o novo contexto inserindo:
 
-    $ fn use context <my-context>
+    $ fn use context meu_contexto
 
 Configure o novo contexto com o nome do perfil OCI que você criou para usar com o Oracle Functions, digitando:
 
-    $ fn update context oracle.profile <profile-name>
+    $ fn update context oracle.profile default
 
+Lembre-se: default é o nome do perfil criado na instalação e configuração do OCI CLI na etapa anterior.
 
-
-**T5.2.2.2.4 Concluir a configuração do contexto CLI do projeto Fn**
+**T5.2.2.2.2 Concluir a configuração do contexto CLI do projeto Fn**
 
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 marca de verificação
