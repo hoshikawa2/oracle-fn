@@ -83,6 +83,9 @@ Será apresentado o fingerprint conforme abaixo. Assim que for apresentado, cliq
 Execute o comando abaixo para poder trabalhar com o functions integrado ao docker:
 
     sudo chown opc:docker /var/run/docker.sock
+    
+    opc é o usuário padrão do Oracle Linux 8
+    Se estiver instalando docker para Ubuntu, por exemplo, troque pelo usuário padrão de trabalho. Neste exemplo, utilize o usuário ubuntu
 
 Inicie o docker com:
 
