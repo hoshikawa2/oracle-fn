@@ -326,10 +326,8 @@ Para que a CLI o guie pelo processo de configuração inicial, use o comando:
 
 **O comando solicita as informações necessárias para o arquivo de configuração e as chaves públicas / privadas da API.**
 
-    Obs: Na etapa T1.4, mostramos como gerar as chaves pública e privada. Se você 
-    optou por gerá-las automaticamente, é aqui que faremos isso. Ao executar o comando
-    oci setup config, você será questionado se deseja carregar suas chaves previamente
-    geradas ou se deseja gerar as chaves.
+    Obs: Ao executar o comando oci setup config, você será questionado se deseja carregar
+    suas chaves previamente geradas ou se deseja gerar as chaves. Informe que deseja gerar as chaves.
     Lembre que esta etapa pede para você determinar o diretório em que as chaves estão
     ou que você deseja ter como padrão. Normalmente .oci
 
