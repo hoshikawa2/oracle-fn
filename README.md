@@ -7,11 +7,15 @@ Em nosso dia-a-dia, ouvimos muito sobre estes termos mas muitas vezes, entender 
 O workshop irá compreender os seguintes conceitos:
 
 - Cloud
+- docker
+- Linha de Comando OCI (OCI CLI)
+- Linha de Comando fn (fn CLI)
 - Compartimentos
 - Usuários/Grupos/Políticas
 - Virtual Cloud Network (VCN)
 - Repositório de Imagens Docker (OCIR)
 - Serverless (Oracle Cloud functions)
+- Perfil para OCI CLI
 - Deployments
 - API Gateway
 
