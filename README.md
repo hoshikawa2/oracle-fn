@@ -7,8 +7,11 @@ Em nosso dia-a-dia, ouvimos muito sobre estes termos mas muitas vezes, entender 
 O workshop irá compreender os seguintes conceitos:
 
 - Cloud
-- Repositório de Imagens Docker
-- Serverless 
+- Compartimentos
+- Usuários/Grupos/Políticas
+- Virtual Cloud Network (VCN)
+- Repositório de Imagens Docker (OCIR)
+- Serverless (Oracle Cloud functions)
 - Deployments
 - API Gateway
 
