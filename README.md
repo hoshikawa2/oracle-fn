@@ -32,7 +32,7 @@ Siga este link:
     https://videohub.oracle.com/media/1_m4904ocr
     
 
-### T1.4 Instalando o Docker
+### T1.2 Instalando o Docker
 
 O docker é uma alternativa à virtualização, onde o maior diferencial é o compartilhamento do Kernel da máquina hospedeira (Linux) com os containers que fazem o papel do ambiente virtualizado.
 As aplicações assim podem se beneficiar da implantação nestes containers e contar com flexibilidade e portabilidade independente do ambiente em que sejam implatados (nuvem pública, nuvem privada, on-premisses, etc).
@@ -52,7 +52,7 @@ Se você pretende instalar o docker com WSL no Windows:
     WSL deve funcionar bem se você instalar o docker com WSL2 e Ubuntu
     Até o fechamento deste material, o WSL1 e Debian não funcionaram corretamente
     
-**T1.4.1 Linux**
+**T1.2.1 Linux**
 
 Para instalar o docker no Oracle Linux (utilize a versão 8), CentOS, Redhat, primeiramente faça o setup do repositório:
 
@@ -96,7 +96,7 @@ Teste para saber se o docker está funcionando:
     $ sudo docker run hello-world
     
 
-**T1.4.2 Ubuntu**
+**T1.2.2 Ubuntu**
 
 Para instalar o docker no Ubuntu, primeiramente faça o setup do repositório:
 
@@ -132,7 +132,7 @@ Teste para saber se o docker está funcionando:
 
     $ sudo docker run hello-world
     
-**T1.4.3 Mac OS X**
+**T1.2.3 Mac OS X**
 
 Faça o download na página do docker para Mac OS X:
 
@@ -144,7 +144,7 @@ Na janela do terminal, teste o docker com o comando:
 
     $ sudo docker run hello-world
 
-**T1.4.4 Windows**
+**T1.2.4 Windows**
 
 Faça o download na página do docker para Mac OS X:
 
@@ -156,89 +156,6 @@ Na janela do Powershell, teste o docker com o comando:
 
     $ docker run hello-world
     
-
-### T1.5 Como gerar uma chave de assinatura de API
-
-    Obs: A etapa T1.5 pode ser feita automaticamente na instalação do OCI CLI. Apenas para conhecimento, entenda que o processo manual de gerar as chaves pública e privada é feita da forma descrita aqui em T1.5. Pule para a etapa T2 para ganhar tempo e gere as chaves automaticamente.
-
-
-**T1.5.1 - Gerando uma chave de assinatura de API (Linux e Mac OS X)**
-
-Use os seguintes comandos OpenSSL para gerar o par de chaves no formato PEM necessário.
-
-**T1.5.1.1** Crie um .ocidiretório para armazenar as credenciais, caso ainda não o tenha feito :
-
-
-    mkdir ~/.oci                
-
-**T1.5.1.2** Gere a chave privada com um dos seguintes comandos.
-
-Para gerar a chave, criptografada com uma senha longa que você fornece quando solicitado:
- 
-    Observação
-
-    Recomendamos que você use uma senha longa para sua chave.
-    
-    openssl genrsa -out ~/.oci/oci_api_key.pem -aes128 2048       
-                 
-
-Para gerar a chave sem senha:
-
-    openssl genrsa -out ~/.oci/oci_api_key.pem 2048                        
-    
-**T1.5.1.3** Altere a permissão do arquivo para garantir que apenas você possa ler o arquivo da chave privada:
-
-    chmod go-rwx ~/.oci/oci_api_key.pem               
-    
-**T1.5.1.4** Gere a chave pública a partir de sua nova chave privada:
-
-    openssl rsa -pubout -in ~/.oci/oci_api_key.pem -out ~/.oci/oci_api_key_public.pem             
-    
-**T1.5.1.5** Copie o conteúdo da chave pública para a área de transferência usando pbcopy, xclip ou uma ferramenta semelhante (você precisará colar o valor no console posteriormente). Por exemplo:
-
-    cat ~/.oci/oci_api_key_public.pem | pbcopy           
-    
-Suas solicitações de API serão assinadas com sua chave privada e a Oracle usará a chave pública para verificar a autenticidade da solicitação. Você deve carregar a chave pública para o IAM (instruções abaixo).
-
-**T1.5.2 - Gerando uma chave de assinatura de API (Windows)**
-
-Se estiver usando o Windows, você precisará instalar o Git Bash para Windows antes de executar os comandos a seguir.
-
-    Observação
-
-    Certifique-se de incluir o openssl binário no caminho do Windows. Na instalação
-    padrão, o arquivo openssl.exe pode ser encontrado em 
-    C:\Program Files\Git\mingw64\bin.
-    
-Use os seguintes comandos OpenSSL para gerar o par de chaves no formato PEM necessário.
-
-**T1.5.2.1** Crie um .ocidiretório para armazenar as credenciais, caso ainda não o tenha feito . Por exemplo:
-
-    mkdir %HOMEDRIVE%%HOMEPATH%\.oci                
-    
-**T1.5.2.2** Gere a chave privada com um dos seguintes comandos:
-
-Para gerar a chave que é criptografada com uma senha longa que você fornece quando solicitado:
- 
-    Observação
-    Recomendamos que você use uma senha longa para sua chave.
-
-    openssl genrsa -out %HOMEDRIVE%%HOMEPATH%\.oci\oci_api_key.pem -aes128 -passout stdin 2048
-                     
-Para gerar a chave sem senha:
-
-    openssl genrsa -out %HOMEDRIVE%%HOMEPATH%\.oci\oci_api_key.pem 2048                        
-
-**T1.5.2.3** Gere a chave pública a partir de sua nova chave privada:
-
-    openssl rsa -pubout -in %HOMEDRIVE%%HOMEPATH%\.oci\oci_api_key.pem -out %HOMEDRIVE%%HOMEPATH%\.oci\oci_api_key_public.pem             
-
-**T1.5.2.4** Copie o conteúdo da chave pública para a área de transferência (você precisará colar o valor no console posteriormente). Por exemplo:
-
-    type \.oci\oci_api_key_public.pem     
-    
-Suas solicitações de API serão assinadas com sua chave privada e a Oracle usará a chave pública para verificar a autenticidade da solicitação. Você deve carregar a chave pública para o IAM (instruções abaixo).
-
 ----
 # T2 - Tutorial 2 - Instalando o CLI
 
