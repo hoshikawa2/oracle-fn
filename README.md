@@ -61,7 +61,7 @@ Para instalar o docker no Oracle Linux (utilize a versão 8), CentOS, Redhat, pr
     $ sudo yum-config-manager --add-repo https://download.docker.com/linux/<edição do Linux>/docker-ce.repo
     
     Edições de Linux disponíveis:
-    centos
+    centos (utilizar este para Oracle Linux 8)
     debian
     fedora
     raspbian
