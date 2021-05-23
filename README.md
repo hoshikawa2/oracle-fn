@@ -746,10 +746,17 @@ O modelo de política inclui as seguintes declarações de política:
 
 **T5.2 Configure seu ambiente de desenvolvimento**
 
+Aqui vamos iniciar a configuração do fn CLI em sua máquina local para poder implementar e implantar suas funções.
+Algumas etapas são necessárias e iremos descrevê-las no decorrer deste tópico.
+	
 **T5.2.2.1 Configure Fn Project CLI no ambiente de desenvolvimento local**
 
 **T5.5.2.1.1 Configurar chave de assinatura**
 
+	
+Nesta etapa, vamos configurar uma chave pública baseada na chave já criada anteriormente quando você instalou o OCI CLI.
+Esta chave pública será utilizada pelo seu usuário não-federado que você acabou de criar para poder trabalhar com o Oracle Functions.
+	
 * Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
 Gere uma chave pública (criptografada com a mesma senha longa que você forneceu ao criar a chave privada e no mesmo local do arquivo da chave privada) inserindo:
