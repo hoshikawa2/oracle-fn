@@ -936,6 +936,10 @@ Parabéns! Você acabou de criar, implantar e chamar sua primeira função usand
 
 **T5.2.2.1.9 Saiba como invocar sua função com o CURL**
 
+Neste tópico, iremos mostrar como montar sua chamada CURL para implementar nas mais diversas aplicações e cofigurações de eventos. 
+Para isto, vamos utilizar um script Linux (infelizmente, este script não está disponível em Mac OS ou Windows, porém mostraremos ao final deste tópico como é uma chamada CURL típica.
+	    
+	    
 Para invocar sua função via **curl**, baixe o arquivo bash **oci-curl.sh** deste tutorial.
 Antes de mais nada, você deverá executar:
 
