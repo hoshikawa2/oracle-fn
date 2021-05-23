@@ -91,7 +91,9 @@ function oci-curl {
     local signing_string="$request_target\n$date_header\n$host_header"
     local headers="(request-target) date host"
     local curl_header_args
+    local curl_header_args_out
     curl_header_args=(-H "$date_header")
+    curl_header_args_out=(-H "'""$date_header""'")
     local body_arg
     body_arg=()
 
@@ -99,6 +101,7 @@ function oci-curl {
         signing_string="$signing_string\n$content_sha256_header\n$content_type_header\n$content_length_header"
         headers=$headers" x-content-sha256 content-type content-length"
         curl_header_args=("${curl_header_args[@]}" -H "$content_sha256_header" -H "$content_type_header" -H "$content_length_header")
+       	curl_header_args_out=("${curl_header_args_out[@]}" -H "'""$content_sha256_header""'" -H "'""$content_type_header""'" -H "'""$content_length_header""'")
         body_arg=(--data-binary @${body})
     fi
 
@@ -106,8 +109,14 @@ function oci-curl {
                 openssl dgst -sha256 -sign $privateKeyPath | \
                 openssl enc -e -base64 | tr -d '\n')
 
+    echo    -----
+    echo    curl "${extra_args[@]}" "${body_arg[@]}" -X $curl_method -sS https://${host}${escaped_target} "${curl_header_args_out[@]}" \
+        -H "'""Authorization: Signature version=\"$sigVersion\",keyId=\"$keyId\",algorithm=\"$alg\",headers=\"${headers}\",signature=\"$sig\"""'"
+    echo    -----
+
     curl "${extra_args[@]}" "${body_arg[@]}" -X $curl_method -sS https://${host}${escaped_target} "${curl_header_args[@]}" \
         -H "Authorization: Signature version=\"$sigVersion\",keyId=\"$keyId\",algorithm=\"$alg\",headers=\"${headers}\",signature=\"$sig\""
+    echo
 }
 
 # url encode all special characters except "/", "?", "=", and "&"
