@@ -746,7 +746,7 @@ Gere uma chave pública (criptografada com a mesma senha longa que você fornece
 
     $ openssl rsa -pubout -in ~/.oci/<private-key-file-name>.pem -out ~/.oci/<public-key-file-name>.pem
 
-Obs: Se você aceitou todos os defaults na etapa de configuração do OCI CLI, o <private-key-file-name> é **oci_api_key.pem**
+Obs: Se você aceitou todos os defaults na etapa de configuração do OCI CLI, o parâmetro **private-key-file-name** é **oci_api_key.pem**
 
 Copie o conteúdo do arquivo de chave pública que você acabou de criar, digitando:
 
