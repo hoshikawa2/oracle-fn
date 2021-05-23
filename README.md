@@ -881,7 +881,22 @@ Faça login no console como desenvolvedor de funções e, em Desenvolvimento, cl
 
 
 **T5.2.2.1.6 Crie sua primeira função**
+	
+Em Oracle Functions , as funções são:
 
+* blocos de código pequenos, mas poderosos, que geralmente fazem uma coisa simples
+* agrupado em aplicativos
+* armazenados como imagens Docker em um registro Docker especificado
+* invocado em resposta a um comando CLI ou solicitação HTTP assinada
+	
+Quando você implanta uma função no Oracle Functions usando o Fn Project CLI, a função é construída como uma imagem Docker e enviada para um registro Docker especificado.
+	
+Uma definição da função é armazenada como metadados no servidor Oracle Functions . A definição descreve como a função deve ser executada e inclui:
+	
+* a imagem do Docker para puxar quando a função é invocada
+* o período máximo de tempo que a função pode ser executada por
+* a quantidade máxima de memória que a função pode consumir
+	
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
 ![Criar_primeira_funcao.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_primeira_funcao.png?raw=true)
