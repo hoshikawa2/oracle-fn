@@ -786,7 +786,13 @@ Adicione um novo perfil ao arquivo ~ .oci / config da seguinte maneira:
 Salve e feche o arquivo.
 
 **T5.2.2.1.3 Configure o contexto CLI do projeto Fn - provedor Oracle** 
-
+	
+Antes de usar o Oracle Functions , você deve configurar o Fn Project CLI para se conectar à sua locação do Oracle Cloud Infrastructure .
+	
+Quando o Fn Project CLI é inicialmente instalado, ele é configurado para um 'contexto' de desenvolvimento local. Para configurar o Fn Project CLI para se conectar à sua locação do Oracle Cloud Infrastructure , você deve criar um novo contexto. O contexto especifica os pontos de extremidade das Funções Oracle , o OCID do compartimento ao qual as funções implantadas pertencerão e o endereço do registro do Docker de e para o qual enviar e receber imagens.
+	
+Você pode definir vários contextos, cada um armazenado em um arquivo de contexto diferente no formato .yaml. Por padrão, os arquivos de contexto individuais são armazenados no ~/.fn/contextsdiretório. O ~/.fn/config.yamlarquivo especifica qual arquivo de contexto o Fn Project usa.
+	
 Faça login em seu ambiente de desenvolvimento de máquina local como desenvolvedor de funções e:
 
 Crie um novo contexto Fn CLI inserindo:
