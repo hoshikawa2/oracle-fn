@@ -717,8 +717,6 @@ Se ainda não houver um VCN adequado para criar recursos de rede, faça login no
 
 
 **T5.1.4 Criar política para o grupo**
-
-Caixa de diálogo Criar uma Policy
 	
 Policy é um documento que especifica quem pode acessar quais recursos e como. O acesso é concedido no nível do grupo e do compartimento, o que significa que você pode escrever uma política que forneça a um grupo um tipo específico de acesso dentro de um compartimento específico ou ao próprio aluguel. Se você conceder a um grupo acesso à locação, o grupo obterá automaticamente o mesmo tipo de acesso a todos os compartimentos dentro da locação
 	
