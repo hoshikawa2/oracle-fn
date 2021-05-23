@@ -939,7 +939,18 @@ Insira o seguinte comando único Fn Project para construir a função e suas dep
 
 
 **T5.2.2.1.8 Invoque sua primeira função**
-
+	
+Em Oracle Functions , o código de uma função é executado (ou executado) quando a função é chamada (ou invocada). Você pode invocar uma função que implantou no Oracle Functions a partir de:
+	
+* O Projeto Fn CLI
+* Os SDKs do Oracle Cloud Infrastructure 
+* Solicitações HTTP assinadas para o endpoint de chamada da função. Cada função tem um endpoint invoke
+* Outros serviços Oracle Cloud (por exemplo, acionados por um evento no serviço Eventos ) ou de serviços externos.
+	
+Quando uma função é chamada pela primeira vez, o Oracle Functions extrai a imagem Docker da função do registro Docker especificado, a executa como um contêiner do Docker e executa a função. Se houver solicitações subsequentes para a mesma função, o Oracle Functions direciona essas solicitações para o mesmo contêiner. Após um período de inatividade, o contêiner do Docker é removido.
+	
+O Oracle Functions mostra informações sobre invocações de função em gráficos de métricas.
+	
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
 ![fn_invoke.png](https://github.com/hoshikawa2/repo-image/blob/master/fn_invoke.png?raw=true)
