@@ -1010,3 +1010,7 @@ Oracle API Gateway - Deploying a function in API Gateway
 Deploy Oracle functions with DevOps
 - https://docs.oracle.com/en/cloud/paas/visual-builder/tutorial-create-project-upload/index.html
 - https://blogs.oracle.com/developers/cicd-automation-for-project-fn-with-oracle-faas-and-developer-cloud-service
+
+Oracle Cloud - Creating an Oracle Linux VM
+- https://blogs.oracle.com/lad-cloud-experts/pt/como-criar-uma-virtual-machine-utilizando-o-oracle-cloud-infrastructure
+	    
