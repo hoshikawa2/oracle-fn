@@ -1004,6 +1004,9 @@ Oracle Functions - Samples
 Oracle Functions - Connecting To ATP With Node.JS
 - https://blogs.oracle.com/developers/oracle-functions-connecting-to-atp-with-nodejs
 
+Oracle API Gateway - Deploying a function in API Gateway
+- https://blogs.oracle.com/developers/creating-your-first-api-gateway-in-the-oracle-cloud
+
 Deploy Oracle functions with DevOps
 - https://docs.oracle.com/en/cloud/paas/visual-builder/tutorial-create-project-upload/index.html
 - https://blogs.oracle.com/developers/cicd-automation-for-project-fn-with-oracle-faas-and-developer-cloud-service
