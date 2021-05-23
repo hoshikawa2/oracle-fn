@@ -1013,3 +1013,7 @@ Deploy Oracle functions with DevOps
 
 Oracle Cloud - Creating an Oracle Linux VM
 - https://blogs.oracle.com/lad-cloud-experts/pt/como-criar-uma-virtual-machine-utilizando-o-oracle-cloud-infrastructure
+
+Oracle Cloud - Logging and Functions
+- https://docs.oracle.com/pt-br/iaas/Content/Functions/Tasks/functionsexportingfunctionlogfiles.htm
+	    
