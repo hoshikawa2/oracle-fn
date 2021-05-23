@@ -983,9 +983,9 @@ E com isto, você verá o comando **curl** montado como exemplo para você imple
 
 Agora que você criou, implantou e invocou uma função, leia a documentação para descobrir como:
 
-• exportar registros de funções configurando um URL de syslog ou enviando registros para um depósito de armazenamento (consulte Armazenamento e visualização de registros de funções )
-• explorar Oracle Functions usando amostras no GitHub (consulte Oracle Functions Samples )
-• invocar uma função usando SDKs (consulte Usando SDKs para invocar funções )
+* exportar registros de funções configurando um URL de syslog ou enviando registros para um depósito de armazenamento (consulte Armazenamento e visualização de registros de funções )
+* explorar Oracle Functions usando amostras no GitHub (consulte Oracle Functions Samples )
+* invocar uma função usando SDKs (consulte Usando SDKs para invocar funções )
 
 ----
 
