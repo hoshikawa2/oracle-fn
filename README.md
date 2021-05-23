@@ -495,7 +495,7 @@ Este tutorial assume que o nome de usuário é jdoe@acme.com.
 
 Confirme se você pode acessar o Oracle Cloud Infrastructure Registry:
 - No console, abra o menu de navegação. Em Soluções e plataforma , acesse Serviços para desenvolvedores e clique em Container Registry .
-- Escolha a região em que você estará trabalhando (por exemplo, us-phoenix-1). 
+- Escolha a região em que você estará trabalhando (por exemplo, us-ashburn-1). 
 - Revise os repositórios que já existem. Este tutorial assume que nenhum repositório foi criado ainda.
 
 ![Página de registro](https://www.oracle.com/webfolder/technetwork/tutorials/obe/oci/registry/img/oci-registry-no-images.png)
@@ -828,7 +828,7 @@ Configure o novo contexto com o endpoint api-url para usar ao chamar a API OCI i
 
 Por exemplo:
 
-    $ fn update context api-url https://functions.us-phoenix-1.oci.oraclecloud.com
+    $ fn update context api-url https://functions.us-ashburn-1.oci.oraclecloud.com
 
 Configure o novo contexto com o endereço do registro e repositório que deseja usar com o Oracle Functions, digitando:
 
