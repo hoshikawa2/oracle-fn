@@ -658,10 +658,11 @@ Distingue-se o usuário federado do não-federado de forma muito simples. Usuár
 
 
 **T5.1.1 Crie grupos e usuários**
-
-Caixa de diálogo Criar Grupo
+	
+Como prática recomendada, você deve criar grupos com base nas atribuições da sua organização, que geralmente se enquadram nas atribuições típicas da organização. Em seguida, designe as atribuições do usuário apropriadas a esses grupos para dar-lhes acesso às funcionalidades necessárias. Finalmente, adicione usuários a esses grupos para designar automaticamente a eles as atribuições de usuário apropriadas.
+		
 Se os usuários e grupos adequados ainda não existirem, faça login no console como administrador de locação e, em Governança e administração , acesse Identidade e:
-
+	
 Crie um novo grupo clicando em Grupos e depois em Criar Grupo .
 
 ![create_group.png](https://github.com/hoshikawa2/repo-image/blob/master/create_group.png?raw=true)
@@ -692,8 +693,6 @@ Clique em Compartments e em Create Compartment.
 ![Criar_compartment.png](https://github.com/hoshikawa2/repo-image/blob/master/Criar_compartment.png?raw=true)
 
 
-
-
 **T5.1.3 Crie VCN e sub-redes**
 	
 Quando você trabalha com o Oracle Cloud Infrastructure, uma das primeiras etapas é configurar uma rede virtual na nuvem (VCN) para seus recursos de nuvem.
@@ -721,7 +720,7 @@ Se ainda não houver um VCN adequado para criar recursos de rede, faça login no
 
 Caixa de diálogo Criar uma Policy
 	
-Policy é Um documento que especifica quem pode acessar quais recursos e como. O acesso é concedido no nível do grupo e do compartimento, o que significa que você pode escrever uma política que forneça a um grupo um tipo específico de acesso dentro de um compartimento específico ou ao próprio aluguel. Se você conceder a um grupo acesso à locação, o grupo obterá automaticamente o mesmo tipo de acesso a todos os compartimentos dentro da locação
+Policy é um documento que especifica quem pode acessar quais recursos e como. O acesso é concedido no nível do grupo e do compartimento, o que significa que você pode escrever uma política que forneça a um grupo um tipo específico de acesso dentro de um compartimento específico ou ao próprio aluguel. Se você conceder a um grupo acesso à locação, o grupo obterá automaticamente o mesmo tipo de acesso a todos os compartimentos dentro da locação
 	
 * Faça login no console como administrador de locação e, em Governança e administração , acesse Identidade e clique em Políticas e, em seguida:
 
