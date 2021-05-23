@@ -760,7 +760,9 @@ Faça login no console como desenvolvedor de funções, abra o menu do usuário 
 
 
 **T5.2.2.1.2 Configurar perfil OCI**
-
+	
+Antes de usar o Oracle Functions, você deve ter um arquivo de configuração CLI do Oracle Cloud Infrastructure que contém as credenciais da conta do usuário que você usará para criar e implantar funções. Essas credenciais de conta de usuário são chamadas de 'perfil'.
+	
 Iremos configurar o perfil para o OCI CLI para seu usuário (não-federado) criado no passo anterior **T5.1.1**
 
     Obs: Quando você criou o ambiente TRIAL, seu usuário foi criado como federado (o nome do seu usuário inicia-se por oracleidentitycloudservice/<nome do usuário>. Porém para trabalhar com o functions, estaremos utilizando o usuário não-federado (sem o oracleidentitycloudservice) pois o Grupo criado anteriormente não aceita usuários federados.
