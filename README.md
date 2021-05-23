@@ -720,8 +720,10 @@ Caixa de diálogo Criar Política
 
 Clique na opção "Show manual editor"
 
-* Se um ou mais usuários do Oracle Functions não for um administrador de locação, use o Criador de políticas para criar uma nova política. Selecione o compartimento raiz da locação e baseie a política no modelo de política. Permitir que os usuários criem, implantem e gerenciem funções e aplicativos usando o Cloud Shell .
+* Se um ou mais usuários do Oracle Functions não for um administrador de locação, use o Criador de políticas para criar uma nova política. Selecione o compartimento raiz da locação e baseie a política no modelo de política. Permitir que os usuários criem, implantem e gerenciem funções e aplicativos usando o Cloud Shell.
+
 O modelo de política inclui as seguintes declarações de política:
+
 
     Allow group <group-name> to use cloud-shell in tenancy
     Allow group <group-name> to manage repos in tenancy
