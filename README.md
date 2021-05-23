@@ -934,7 +934,50 @@ O 'Olá, John!' mensagem é exibida.
 
 Parabéns! Você acabou de criar, implantar e chamar sua primeira função usando Oracle Functions!
 
+**T5.2.2.1.9 Saiba como invocar sua função com o CURL**
 
+Para invocar sua função via **curl**, baixe o arquivo bash **oci-curl.sh** deste tutorial.
+Antes de mais nada, você deverá executar:
+
+    chmod +x oci-curl.sh
+    
+Crie um arquivo chamado payload.json. Este arquivo deverá conter os parâmetros para o POST na chamada de uma função. Nosso caso não precisará de parâmetros, por isso, gere um arquivo em branco mesmo, desta forma:
+
+    touch payload.json
+
+Busque o endpoint de sua função na console da OCI navegando em:
+
+* Menu principal
+* Serviço do Desenvolvedor
+* Functions
+* Aplicações
+* Selecione seu compartimento
+* Clique na aplicação (helloworld-app)
+* Copie o **Invoke endpoint**
+
+![invoke_endpoint.png](https://github.com/hoshikawa2/repo-image/blob/master/invoke_endpoint.png?raw=true)
+
+Seu endpoint pode ser dividido em 2 partes:
+
+    https://5b2ey35uuyq.sa-saopaulo-1.functions.oci.oraclecloud.com/20181201/functions/ocid1.fnfunc.oc1.sa-saopaulo-1.aaaaaaaag5ainoruwqlq67t4uqizqmjjsa3os6jaxf3u5clo4f4iunzade6a/actions/invoke
+    
+    URL-para-funcao:
+    5b2ey35uuyq.sa-saopaulo-1.functions.oci.oraclecloud.com --> será o primeiro parâmetro da chamada de seu oci-curl
+    
+    Funcao:
+    /20181201/functions/ocid1.fnfunc.oc1.sa-saopaulo-1.aaaaaaaag5ainoruwqlq67t4uqizqmjjsa3os6jaxf3u5clo4f4iunzade6a/actions/invoke
+     --> será seu segundo parâmetro do oci-curl
+
+E assim que estiver pronto, você poderá executar:
+
+    ./oci-curl.sh "<URL-para-funcao>" post payload.json "<Funcao>"
+    
+    Exemplo:
+    ./oci-curl.sh "5b2ey35uuyq.sa-saopaulo-1.functions.oci.oraclecloud.com" post payload.json "/20181201/functions/ocid1.fnfunc.oc1.sa-saopaulo-1.aaaaaaaag5ainoruwqlq67t4uqizqmjjsa3os6jaxf3u5clo4f4iunzade6a/actions/invoke"
+
+E com isto, você verá o comando **curl** montado como exemplo para você implementar em suas aplicações:
+
+    curl --data-binary @payload.json -X POST -sS https://5b2ey35uuyq.sa-saopaulo-1.functions.oci.oraclecloud.com/20181201/functions/ocid1.fnfunc.oc1.sa-saopaulo-1.aaaaaaaag5ainoruwqlq67t4uqizqmjjsa3os6jaxf3u5clo4f4iunzade6a/actions/invoke -H 'date: Sun, 23 May 2021 14:06:27 GMT' -H 'x-content-sha256: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' -H 'content-type: application/json' -H 'content-length: 0' -H 'Authorization: Signature version="1",keyId="ocid1.tenancy.oc1..aaaaaaaarwn3uriqeeoejrjjd7cj6sweix4dbjqe3o7c74zqsf4ojk7i4rwa/ocid1.user.oc1..aaaaaaaab4xpjyo2sxopwqvhwhhlejdqumfupzsrlh3ifnv3jcgtrj3w4riq/c5:4a:45:6f:ac:14:8b:d9:e9:30:1c:65:9e:ec:3f:0d",algorithm="rsa-sha256",headers="(request-target) date host x-content-sha256 content-type content-length",signature="bfHcsuCra0tgcPG3K454mg0WSJIWtpKnqIaGHl0aGI8Emjdy/8ayx9Fzlo9ObCLM72sgXtMmId5wnpWJJoyx8HCoE4FBfT8h/gaETeXd/5MvmB3rdp/5vGv0Yrk1mJ2074VUrFsQM8QVbi+7TPJ5srIzAhuvbc6Ms6NfO1Rep5RWjLW54+bF6rd8QQXG7TG1tvE4HE/+vh/auHbor2MaSl9oJVGIPQsV0WFOHdgvmujj1gC2QjRf857+7VyWdVDg4VHmCYFmMDHeXRKzG9HEvWVXXb1XbNMzCA4o0C5tGSonR1hn4ncOcCMhuOdtm6sDv4RryyUj2ASgOOudT5cw+A=="'
 
 **T6 Próximos passos**
 
