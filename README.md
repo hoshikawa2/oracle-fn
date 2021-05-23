@@ -678,7 +678,11 @@ Adicione um usuário a um grupo clicando em Grupos , depois no nome do grupo e e
 
 
 **T5.1.2 Criar compartimento**
-
+	
+Compartimentos no Oracle Cloud Infrastructure Identity and Access Management (IAM) são estruturas lógicas que ajudam a organizar e controlar o acesso aos recursos de nuvem.
+	
+Um compartimento do IAM contém recursos, como instâncias de banco de dados, redes virtuais na nuvem e volumes em blocos. Pense em um compartimento como um grupo lógico e não um contêiner físico. Ele age como um filtro para o que você está exibindo. Sempre que você adicionar um recurso no Oracle Cloud Infrastructure, crie-o em um compartimento específico. Se necessário, você pode mover recursos de um compartimento para outro. Os usuários precisam de permissões para acessar compartimentos e recursos neles.
+	
 **T5.1.2.1 Criar página de compartimento**
 
 Se ainda não houver um compartimento adequado para criar recursos de rede e recursos de funções Oracle, faça login no console como administrador de locação e, em Governança e administração , acesse Identidade e:
@@ -691,7 +695,12 @@ Clique em Compartments e em Create Compartment.
 
 
 **T5.1.3 Crie VCN e sub-redes**
-
+	
+Quando você trabalha com o Oracle Cloud Infrastructure, uma das primeiras etapas é configurar uma rede virtual na nuvem (VCN) para seus recursos de nuvem.
+Uma rede virtual privada configurada nos data centers da Oracle. Ela se parece muito com uma rede tradicional, com regras de firewall e tipos específicos de gateways de comunicação que você pode optar por usar. Uma VCN reside em uma única região do Oracle Cloud Infrastructure e abrange um único bloco CIDR IPv4 contíguo da sua escolha.
+	
+Sub-redes são subdivisões definidas em uma VCN (por exemplo, 10.0.0.0/24 e 10.0.1.0/24). As sub-redes contêm VNICs (virtual network interface cards), que são anexadas às instâncias. Cada sub-rede consiste em um intervalo contíguo de endereços IP que não se sobrepõem com outras sub-redes da VCN.
+	
 **T5.1.3.1 Iniciar caixa de diálogo do assistente VCN**
 
 Se ainda não houver um VCN adequado para criar recursos de rede, faça login no console como administrador de locação e em Infraestrutura central , vá para Rede e, em seguida:
@@ -710,8 +719,10 @@ Se ainda não houver um VCN adequado para criar recursos de rede, faça login no
 
 **T5.1.4 Criar política para o grupo**
 
-Caixa de diálogo Criar Política
-
+Caixa de diálogo Criar uma Policy
+	
+Policy é Um documento que especifica quem pode acessar quais recursos e como. O acesso é concedido no nível do grupo e do compartimento, o que significa que você pode escrever uma política que forneça a um grupo um tipo específico de acesso dentro de um compartimento específico ou ao próprio aluguel. Se você conceder a um grupo acesso à locação, o grupo obterá automaticamente o mesmo tipo de acesso a todos os compartimentos dentro da locação
+	
 * Faça login no console como administrador de locação e, em Governança e administração , acesse Identidade e clique em Políticas e, em seguida:
 
 ![criar_politicas.png](https://github.com/hoshikawa2/repo-image/blob/master/criar_politicas.png?raw=true)
