@@ -856,12 +856,17 @@ Por exemplo:
 Configure o novo contexto com o endereço do registro e repositório que deseja usar com o Oracle Functions, digitando:
 
     $ fn update context registry <region-key>.ocir.io/<tenancy-namespace>/<repo-name>
+    
+    Onde <region-key>:
+    iad = Ashburn
+    gru = São Paulo
+    phx = Phoenix
 
 Onde <region-key> é a mesma chave de três caracteres que você especificou ao fazer login no Oracle Cloud Infrastructure Registry, e <tenancy-namespace> é a string de namespace de armazenamento de objeto gerado automaticamente pela locação mostrada na página Informações de locação.
 
 Por exemplo:
 
-    $ fn update context registry phx.ocir.io/ansh81vru1zp/acme-repo
+    $ fn update context registry iad.ocir.io/ansh81vru1zp/acme-repo
 
 Agora você está pronto para começar a criar, implantar e invocar funções.
 
