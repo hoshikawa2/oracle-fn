@@ -151,18 +151,6 @@ Na janela do terminal, teste o docker com o comando:
 
     $ sudo docker run hello-world
 
-**T1.2.4 Windows**
-
-Faça o download na página do docker para Mac OS X:
-
-    https://hub.docker.com/editions/community/docker-ce-desktop-windows/
-    
-Dê duplo-clique com o mouse no arquivo "Docker for Windows Installer" e siga os passos.
-
-Na janela do Powershell, teste o docker com o comando:
-
-    $ docker run hello-world
-    
 ----
 # T2 - Tutorial 2 - Instalando o CLI
 
@@ -233,36 +221,7 @@ Você pode usar o Homebrew para instalar, atualizar e desinstalar o CLI no Mac O
 
     brew uninstall oci-cli
 
-### T2.4 - Windows
-
-**T2.4.1** Abra o console do PowerShell usando a opção Executar **como administrador** .
-
-O instalador permite o preenchimento automático instalando e executando um script. Para permitir que este script seja executado, você deve habilitar a política de execução **RemoteSigned**.
-
-Para configurar a política de execução remota para PowerShell, execute o seguinte comando.
-
-    Set-ExecutionPolicy RemoteSigned
-
-**T2.4.2** Baixe o script do instalador:
-
-    Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1 -OutFile install.ps1
-
-**T2.4.3** Execute o script do instalador com ou sem prompts:
-
-**T2.4.3.1** Para executar o script do instalador com prompts, execute o seguinte comando:
-
-    iex ((New-ObjectSystem.Net.WebClient) .DownloadString ('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))
-
-... e responda às solicitações do script de instalação .
-
-
-**T2.4.4** Para executar o script do instalador sem avisar o usuário, aceitando as configurações padrão, execute o seguinte comando:
-
-
-       install.ps1 -AcceptAllDefaults 
-
-
-### T2.5 - Instruções do script de instalação
+### T2.4 - Instruções do script de instalação
 
 O script de instalação solicita as seguintes informações.
 
@@ -281,7 +240,7 @@ O script de instalação solicita as seguintes informações.
     CLI sem fornecer o caminho completo para o executável. Isso adicionará oci.exe 
     ao seu PATH.
 
-### T2.6 - Configurando o arquivo config
+### T2.5 - Configurando o arquivo config
 
 Antes de usar a CLI, você deve criar um arquivo de configuração que contém as credenciais necessárias para trabalhar com o **Oracle Cloud Infrastructure** .
 
@@ -293,9 +252,9 @@ Para isto, vamos seguir o roteiro:
 Vamos lá
 
  
-**T2.6.1 - OCI do Tenant**
+**T2.5.1 - OCI do Tenant**
 
-**T2.6.1.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no Tenant:
+**T2.5.1.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no Tenant:
 
 ![Configuração do Tenant](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/Acessando%20Tenant%201.png?raw=true)
 
@@ -304,27 +263,27 @@ Vamos lá
 ![OCID do Tenant](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/Acessando%20Tenant%202.png?raw=true)
 
 
-**T2.6.1.3** Clique em Copiar para copiá-lo para a área de transferência e guarde em suas anotações para uso posterior
+**T2.5.1.3** Clique em Copiar para copiá-lo para a área de transferência e guarde em suas anotações para uso posterior
 
 
-**T2.6.2 - OCI do Usuário**
+**T2.5.2 - OCI do Usuário**
 
-**T2.6.2.1** Se você estiver conectado como o usuário:
+**T2.5.2.1** Se você estiver conectado como o usuário:
 
-**T2.6.2.1.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no seu usuário:
+**T2.5.2.1.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no seu usuário:
 
 ![Configuração do Usuário](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/Acessando%20Usuario%201.png?raw=true)
 
 **T2.6.2.1.2** Se você for um administrador fazendo isso para outro usuário: Abra o menu de navegação . Em Governança e Administração , acesse Identidade e clique em Usuários . Selecione o usuário na lista.
 
-**T2.6.2.1.3** O OCID do usuário é mostrado em Informações do usuário . 
+**T2.5.2.1.3** O OCID do usuário é mostrado em Informações do usuário . 
 
 ![OCID do Usuário](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/Acessando%20Usuario%202.png?raw=true)
 
-**T2.6.2.1.4** Clique em Copiar para copiá-lo para a área de transferência e guarde em suas anotações para uso posterior
+**T2.5.2.1.4** Clique em Copiar para copiá-lo para a área de transferência e guarde em suas anotações para uso posterior
 
 
-**T2.6.3 Configurando OCI CLI**
+**T2.5.3 Configurando OCI CLI**
 
 Para que a CLI o guie pelo processo de configuração inicial, use o comando:
 
@@ -344,31 +303,31 @@ Você vai precisar de algumas informações para preencher a configuração quan
 - OCID do seu Usuário na Cloud Oracle
 
 
-**T2.6.4 - Como fazer upload da chave pública**
+**T2.5.4 - Como fazer upload da chave pública**
 
 Você pode fazer upload da chave pública PEM no console , que pode ser acessado fazendo login aqui: https://cloud.oracle.com
 
-**T2.6.4.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no seu usuário:
+**T2.5.4.1** Clique em Configurações do usuário conforme a imagem e em seguida clique no seu usuário:
 
 ![Configuração do Usuário](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/Acessando%20Usuario%201.png?raw=true)
 
-**T2.6.4.2** Visualize os detalhes do usuário que chamará a API com o par de chaves:
+**T2.5.4.2** Visualize os detalhes do usuário que chamará a API com o par de chaves:
 
-**T2.6.4.3** Se você for um administrador fazendo isso para outro usuário: 
+**T2.5.4.3** Se você for um administrador fazendo isso para outro usuário: 
 - Abra o menu de navegação . 
 - Em Governança e Administração , acesse Identidade e clique em Usuários . 
 - Selecione o usuário na lista.
 
-**T2.6.4.4** Clique em Adicionar chave pública .
+**T2.5.4.4** Clique em Adicionar chave pública .
 
 ![Adicionando chave pública](https://github.com/hoshikawa2/OCI-DEV/blob/main/images/API%20Key.png?raw=true)
 
-**T2.6.4.5** Cole o conteúdo da chave pública PEM na caixa de diálogo e clique em Adicionar .
+**T2.5.4.5** Cole o conteúdo da chave pública PEM na caixa de diálogo e clique em Adicionar .
 
     A impressão digital da chave é exibida (por exemplo, 12: 34: 56: 78: 90: ab: cd: ef: 12: 34: 56: 78: 90: ab: cd: ef).
 
 
-**T2.6.5 - Testando o OCI CLI**
+**T2.5.5 - Testando o OCI CLI**
 
 Para testar suas configurações, execute o seguinte comando:
 
