@@ -848,6 +848,19 @@ Agora você está pronto para começar a criar, implantar e invocar funções.
 
 **T5.2.2.1.5.1 1Crie seu primeiro aplicativo**
 
+No Oracle Functions , um aplicativo é:
+
+* um agrupamento lógico de funções
+* uma maneira de alocar e configurar recursos para todas as funções do aplicativo
+* um contexto comum para armazenar variáveis de configuração que estão disponíveis para todas as funções no aplicativo
+* uma maneira de garantir o isolamento do tempo de execução da função
+	
+Ao definir um aplicativo no Oracle Functions , você especifica as sub-redes nas quais executar as funções no aplicativo. Você também especifica se deseja habilitar o registro para as funções no aplicativo.
+	
+Quando funções de diferentes aplicativos são chamadas simultaneamente, o Oracle Functions garante que as execuções dessas funções sejam isoladas umas das outras.
+A prática recomendada é agrupar várias funções em um único aplicativo para melhor eficiência e desempenho.
+O Oracle Functions mostra os aplicativos e suas funções no console .
+	
 Faça login no console como desenvolvedor de funções e, em Desenvolvimento, clique em Funções e:
 
 ![menu_functions.png](https://github.com/hoshikawa2/repo-image/blob/master/menu_functions.png?raw=true)
