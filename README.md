@@ -1095,3 +1095,6 @@ Oracle Cloud - Creating an Oracle Linux VM
 Oracle Cloud - Logging and Functions
 - https://docs.oracle.com/pt-br/iaas/Content/Functions/Tasks/functionsexportingfunctionlogfiles.htm
 	    
+Oracle OCI CLI - Documentação
+- https://docs.oracle.com/iaas/tools/oci-cli/latest/oci_cli_docs/
+	    
