@@ -409,8 +409,9 @@ Você deve obter algo como:
 
 
 # T3 - Tutorial 3 - Instalando functions CLI
-
-
+	
+O Oracle Functions é ativado pelo mecanismo de código aberto do Fn Project. Como resultado, você pode usar a CLI do Fn Project para executar operações de criação, leitura, atualização e exclusão no Oracle Functions.
+	
 Faça login em seu ambiente de desenvolvimento como desenvolvedor de funções e:
 
 Abra o arquivo Fn Project CLI README.md no GitHub e siga as instruções apropriadas para instalar o Fn Project CLI. Como uma visão geral conveniente, as instruções são resumidas abaixo:
