@@ -164,7 +164,7 @@ Na janela do Powershell, teste o docker com o comando:
     $ docker run hello-world
     
 ----
-# T2 - Tutorial 2 - Instalando o CLI
+# T2 - Tutorial 2 - Instalando o OCI CLI
 
 O OCI CLI (Command Line Interface) permite trabalhar com os recursos da Cloud Oracle através de linhas de comando.
 Além disto, para trabalhar com a linha de comandos para Kubernetes (kubectl) ou functions (fn), é necessário integrar o kubectl/fn com o OCI CLI.
