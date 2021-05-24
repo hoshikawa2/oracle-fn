@@ -251,7 +251,7 @@ Para configurar a política de execução remota para PowerShell, execute o segu
 
 **T2.4.3.1** Para executar o script do instalador com prompts, execute o seguinte comando:
 
-    iex ((New-ObjectSystem.Net.WebClient) .DownloadString ('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))
+    iex ((New-ObjectSystem.Net.WebClient).DownloadString ('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))
 
 ... e responda às solicitações do script de instalação .
 
