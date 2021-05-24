@@ -1086,7 +1086,11 @@ Deploy Oracle functions with DevOps
 - https://blogs.oracle.com/developers/cicd-automation-for-project-fn-with-oracle-faas-and-developer-cloud-service
 
 Oracle Cloud - Creating an Oracle Linux VM
-- https://blogs.oracle.com/lad-cloud-experts/pt/como-criar-uma-virtual-machine-utilizando-o-oracle-cloud-infrastructure
+   - Primeiro Criar a VCN pública
+   - https://docs.oracle.com/en-us/iaas/data-science/data-science-tutorial/tutorial/get-started-create-vcn.htm
+	    
+   - Criando a VM
+   - https://blogs.oracle.com/lad-cloud-experts/pt/como-criar-uma-virtual-machine-utilizando-o-oracle-cloud-infrastructure
 
 Oracle Cloud - Logging and Functions
 - https://docs.oracle.com/pt-br/iaas/Content/Functions/Tasks/functionsexportingfunctionlogfiles.htm
