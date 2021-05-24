@@ -907,7 +907,9 @@ Faça login no console como desenvolvedor de funções e, em Desenvolvimento, cl
 
 * Clique em Criar 
 
-
+Obs: Você também consegue criar sua função através da linha de comando. O formato é:
+	    
+    fn create app helloworld-app --annotation oracle.com/oci/subnetIds='["ocid1.subnet.oc1.phx.aaaaaaaacnh..."]'
 
 **T5.2.2.1.6 Crie sua primeira função**
 	
