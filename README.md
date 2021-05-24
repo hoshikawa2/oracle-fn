@@ -167,8 +167,8 @@ Na janela do Powershell, teste o docker com o comando:
 # T2 - Tutorial 2 - Instalando o CLI
 
 O OCI CLI (Command Line Interface) permite trabalhar com os recursos da Cloud Oracle através de linhas de comando.
-Além disto, para trabalhar com a linha de comandos para Kubernetes (kubectl), é necessário integrar o kubectl com o OCI CLI.
-Neste tutorial iremos instalar o CLI como prévia para que você possa então, nos próximos passos, configurar seu kubectl para integrar-se à OCI.
+Além disto, para trabalhar com a linha de comandos para Kubernetes (kubectl) ou functions (fn), é necessário integrar o kubectl/fn com o OCI CLI.
+Neste tutorial iremos instalar o CLI como prévia para que você possa então, nos próximos passos, configurar seu fn CLI para integrar-se à OCI.
 Vamos lá.
 
     O script do instalador instala automaticamente o CLI e suas dependências, Python e virtualenv. 
